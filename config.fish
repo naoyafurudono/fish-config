@@ -14,6 +14,8 @@ function gi; curl -sLw n https://www.toptal.com/developers/gitignore/api/$argv; 
 
 set PATH /Users/nfurudono/.cargo/bin $PATH
 set PATH ~/go/bin $PATH
+set PATH ~/.local/bin $PATH
+set PATH ~/.cargo/bin $PATH
+set EDITOR nvim
+set PAGER bat
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/nfurudono/google-cloud-sdk/path.fish.inc' ]; . '/Users/nfurudono/google-cloud-sdk/path.fish.inc'; end
