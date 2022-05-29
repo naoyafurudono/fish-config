@@ -28,3 +28,14 @@ set VISUAL nvim
 # set PAGER bat
 
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /home/furudono/.ghcup/bin $PATH # ghcup-env
+
+# -- vi mode --
+
+fish_vi_key_bindings
+
+# Do after `fish_vi_key_bindings`, which overwrites follows
+set fish_cursor_default     block      blink
+set fish_cursor_insert      line       # blink
+set fish_cursor_replace_one underscore # blink
+set fish_cursor_visual      block
+
