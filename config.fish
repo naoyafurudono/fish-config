@@ -2,13 +2,19 @@ if status --is-interactive
   set -g fish_user_abbreviations
 
   abbr --add ls       exa
-  abbr --add less     batcat
   abbr --add v        nvim
   abbr --add add      git add
   abbr --add commit   git commit
   abbr --add push     git push
   abbr --add status   git status
-  abbr --add xremap   xremap ~/.config/xremap/xremap.conf --device 'Topre REALFORCE 87 US' 
+
+  if test (uname -s) = "Darwin"
+	  abbr --add less bat
+  else
+	  abbr --add less batcat
+    abbr --add xremap   xremap ~/.config/xremap/xremap.conf --device 'Topre REALFORCE 87 US' 
+  end
+
 end
 
 function gi; curl -sLw n https://www.toptal.com/developers/gitignore/api/$argv; end
