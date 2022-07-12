@@ -17,8 +17,6 @@ if status --is-interactive
 
 end
 
-function gi; curl -sLw n https://www.toptal.com/developers/gitignore/api/$argv; end
-
 set PATH ~/go/bin $PATH
 set PATH /usr/local/go/bin $PATH
 set PATH ~/.local/bin $PATH
