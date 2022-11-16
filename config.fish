@@ -3,15 +3,12 @@ if status --is-interactive
 
   abbr --add ls       exa
   abbr --add v        nvim
-  abbr --add add      git add
-  abbr --add commit   git commit
-  abbr --add push     git push
-  abbr --add status   git status
+  abbr --add gg       git grep -n -1
 
   if test (uname -s) = "Darwin"
-	  abbr --add less bat
+    abbr --add less bat
   else
-	  abbr --add less batcat
+    abbr --add less batcat
     abbr --add xremap   xremap ~/.config/xremap/xremap.conf --device 'Topre REALFORCE 87 US' 
   end
 
